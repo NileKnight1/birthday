@@ -11,13 +11,15 @@ config_version=5
 [application]
 
 config/name="birthday"
+run/main_scene="uid://d1e0hab3v3y45"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [editor_plugins]
 

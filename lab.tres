@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://doohgof46axu"]
+
+[ext_resource type="FontFile" uid="uid://dale1thyq742k" path="res://Fredoka-VariableFont_wdth,wght.ttf" id="1_u3be8"]
+
+[resource]
+font = ExtResource("1_u3be8")
+font_size = 30

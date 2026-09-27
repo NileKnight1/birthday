@@ -1,45 +1,163 @@
 [gd_scene format=3 uid="uid://d1e0hab3v3y45"]
 
 [ext_resource type="Script" uid="uid://ndtnpr1scnsd" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://bnvn6g1yl4bjm" path="res://Fredoka-Bold.ttf" id="2_7vrkn"]
+[ext_resource type="FontFile" uid="uid://dale1thyq742k" path="res://Fredoka-VariableFont_wdth,wght.ttf" id="2_fu7sn"]
+[ext_resource type="LabelSettings" uid="uid://doohgof46axu" path="res://lab.tres" id="3_jix8l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vlew8"]
+bg_color = Color(0.47704375, 0.5892605, 0.8797614, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlkkf"]
+bg_color = Color(0.47843137, 0.5882353, 0.8784314, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_bekt7"]
+font = ExtResource("2_fu7sn")
+font_size = 35
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vlew8"]
+font = ExtResource("2_7vrkn")
+font_size = 63
 
 [node name="main_menu" type="Node2D" unique_id=616896952]
 script = ExtResource("1_06t4h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=657929481]
 
+[node name="bg" type="Panel" parent="CanvasLayer" unique_id=2119398378]
+offset_right = 1281.0
+offset_bottom = 723.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vlew8")
+
 [node name="generate" type="Button" parent="CanvasLayer" unique_id=1827534104]
-offset_left = 517.0
-offset_top = 318.0
-offset_right = 595.0
-offset_bottom = 349.0
-text = "generate"
+offset_left = 42.0
+offset_top = 262.0
+offset_right = 202.0
+offset_bottom = 312.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_glbon")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
+text = "Generate"
+
+[node name="copy" type="Button" parent="CanvasLayer" unique_id=1915486705]
+offset_left = 218.0
+offset_top = 264.0
+offset_right = 378.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_glbon")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
+text = "Copy"
 
 [node name="him" type="LineEdit" parent="CanvasLayer" unique_id=2071365526]
-offset_left = 521.0
-offset_top = 270.0
-offset_right = 589.5
-offset_bottom = 301.0
+offset_left = 43.0
+offset_top = 136.0
+offset_right = 289.0
+offset_bottom = 177.0
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
+placeholder_text = "Ammar?"
+expand_to_text_length = true
+caret_blink = true
+
+[node name="him_label" type="Label" parent="CanvasLayer" unique_id=226214374]
+offset_left = 54.0
+offset_top = 141.0
+offset_right = 815.0
+offset_bottom = 172.0
+text = "Ammar?"
+label_settings = SubResource("LabelSettings_bekt7")
+vertical_alignment = 1
+autowrap_trim_flags = 64
 
 [node name="code" type="Label" parent="CanvasLayer" unique_id=572222448]
-offset_left = 535.0
-offset_top = 414.0
-offset_right = 575.0
-offset_bottom = 437.0
-text = "here"
+offset_left = 47.0
+offset_top = 209.0
+offset_right = 363.0
+offset_bottom = 247.0
+text = "The code appears here."
+label_settings = ExtResource("3_jix8l")
 
 [node name="og" type="Label" parent="CanvasLayer" unique_id=1205075721]
-offset_left = 536.0
-offset_top = 444.0
-offset_right = 576.0
-offset_bottom = 467.0
-text = "here"
+visible = false
+offset_left = 61.0
+offset_top = 334.0
+offset_right = 120.0
+offset_bottom = 372.0
+text = "The name is Ammar."
+label_settings = ExtResource("3_jix8l")
 
-[node name="copy" type="Button" parent="CanvasLayer" unique_id=2075759857]
-offset_left = 652.0
-offset_top = 426.0
-offset_right = 697.0
-offset_bottom = 457.0
-text = "copy"
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1215776618]
+offset_left = 415.0
+offset_top = 26.0
+offset_right = 870.0
+offset_bottom = 103.0
+text = "Horror Birthday"
+label_settings = SubResource("LabelSettings_vlew8")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="CanvasLayer/generate" to="." method="_on_generate_pressed"]
 [connection signal="pressed" from="CanvasLayer/copy" to="." method="_on_copy_pressed"]

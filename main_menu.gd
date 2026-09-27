@@ -6,7 +6,11 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	pass
+	if $CanvasLayer/him.text != "":
+		$CanvasLayer/him_label.text = $CanvasLayer/him.text
+	else:
+		$CanvasLayer/him_label.text = "Ammar?"
+		
 
 var code = ""
 func _on_copy_pressed() -> void:
