@@ -246,6 +246,7 @@ theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_w44g7")
 theme_override_styles/focus = SubResource("StyleBoxFlat_cm266")
+text = "30"
 placeholder_text = "2008"
 alignment = 1
 max_length = 4
