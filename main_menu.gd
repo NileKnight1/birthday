@@ -4,18 +4,18 @@ extends Node2D
 func _ready() -> void:
 	
 	#for i in range(1, 32):
-		#$CanvasLayer/day.add_item(str(i))
+		#$CanvasLayer/form/birdthday/day.add_item(str(i))
 	
 	#print(str(9).unicode_at(0))
 	# 48 - 57
 	pass # Replace with function body.
-
-func _process(delta: float) -> void:
-	if $CanvasLayer/him.text != "":
-		$CanvasLayer/him_label.text = $CanvasLayer/him.text
-	else:
-		$CanvasLayer/him_label.text = "Ammar?"
-	
+#
+#func _process(delta: float) -> void:
+	#if $CanvasLayer/form/him.text != "":
+		#$CanvasLayer/form/him_label.text = $CanvasLayer/form/him.text
+	#else:
+		#$CanvasLayer/form/him_label.text = "Ammar?"
+	#
 	
 	
 	
@@ -34,7 +34,31 @@ var codes = [
 
 func _on_generate_pressed() -> void:
 	code = "" 
-	him = $CanvasLayer/him.text
+	him = $CanvasLayer/form/him.text
+	#print()
+	var day = ($CanvasLayer/form/birdthday/day.text)
+	var month = ($CanvasLayer/form/birdthday/month.text)
+	var year = ($CanvasLayer/form/birdthday/year.text)
+	
+	# 722008
+	# 12122008
+	
+	for i in $CanvasLayer/form/rooms.get_children():
+		if i.button_pressed:
+			code += i.text
+	
+	for i in day:
+		code += (char(i.unicode_at(0)+30))
+	code += (char(50))
+	for i in day:
+		code += (char(i.unicode_at(0)+40))
+	code += (char(50))
+	for i in year:
+		code += (char(i.unicode_at(0)+50))
+	code += (char(50))
+	
+	
+	
 	for i in him:
 		#print(i.unicode_at(0))
 		print(char(i.unicode_at(0)+1))
@@ -42,7 +66,7 @@ func _on_generate_pressed() -> void:
 		var temp = randi_range(60,130)
 		code += (char(temp))
 		
-	$CanvasLayer/code.text = code
+	$CanvasLayer/form/code.text = code
 	print(code)
 	decipher()
 
@@ -54,7 +78,7 @@ func decipher():
 			deciphered += char(code[i].unicode_at(0)-1)
 	
 	
-	$CanvasLayer/og.text = deciphered
+	#$CanvasLayer/form/og.text = deciphered
 
 var was_day = ""
 var was_month = ""
@@ -70,7 +94,7 @@ func _on_day_text_changed(new_text: String) -> void:
 		temp = int(char(last_letter.unicode_at(0)))
 		print(last_letter)
 		print(temp)
-	#else: $CanvasLayer/day.text = "1"
+	#else: $CanvasLayer/form/birdthday/day.text = "1"
 	if new_text: 
 		if was_day != "" && new_text.length() == 1:
 			pass
@@ -82,9 +106,10 @@ func _on_day_text_changed(new_text: String) -> void:
 			
 			
 			new_text = was_day
-			$CanvasLayer/day.text = was_day
+			$CanvasLayer/form/birdthday/day.text = was_day
 			print("wrong")
-			$CanvasLayer/days.caret_column = new_text.length()
+			if new_text:
+				$CanvasLayer/form/birdthday/day.caret_column = new_text.length()
 			
 			
 	was_day = new_text
@@ -110,9 +135,10 @@ func _on_month_text_changed(new_text: String) -> void:
 			):
 			
 			new_text = was_month
-			$CanvasLayer/month.text = was_month
+			$CanvasLayer/form/birdthday/month.text = was_month
 			print("wrong")
-			$CanvasLayer/month.caret_column = new_text.length()
+			if new_text:
+				$CanvasLayer/form/birdthday/month.caret_column = new_text.length()
 			
 	was_month = new_text
 
@@ -151,11 +177,11 @@ func _on_year_text_changed(new_text: String) -> void:
 			wrong = 1
 			
 			
-	
 		if wrong:
 			new_text = was_year
-			$CanvasLayer/year.text = was_year
+			$CanvasLayer/form/birdthday/year.text = was_year
 			print("wrong")
-			$CanvasLayer/year.caret_column = new_text.length()
+			if new_text:
+				$CanvasLayer/form/birdthday/year.caret_column = new_text.length()
 			
 	was_year = new_text
