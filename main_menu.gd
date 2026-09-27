@@ -2,6 +2,11 @@ extends Node2D
 
 
 func _ready() -> void:
+	
+	#for i in range(1, 32):
+		#$CanvasLayer/day.add_item(str(i))
+	
+	
 	pass # Replace with function body.
 
 

@@ -51,6 +51,30 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iotk1"]
+content_margin_left = 20.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w44g7"]
+content_margin_left = 20.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm266"]
+content_margin_left = 20.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [sub_resource type="LabelSettings" id="LabelSettings_bekt7"]
 font = ExtResource("2_fu7sn")
 font_size = 35
@@ -59,6 +83,54 @@ font_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_vlew8"]
 font = ExtResource("2_7vrkn")
 font_size = 63
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe12f"]
+content_margin_left = 19.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy7ct"]
+content_margin_left = 19.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
+content_margin_left = 19.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0o4t1"]
+content_margin_left = 19.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0k4wn"]
+content_margin_left = 19.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5v2v"]
+content_margin_left = 19.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="main_menu" type="Node2D" unique_id=616896952]
 script = ExtResource("1_06t4h")
@@ -73,9 +145,9 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_vlew8")
 
 [node name="generate" type="Button" parent="CanvasLayer" unique_id=1827534104]
 offset_left = 42.0
-offset_top = 262.0
+offset_top = 377.0
 offset_right = 202.0
-offset_bottom = 312.0
+offset_bottom = 427.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
@@ -90,9 +162,9 @@ text = "Generate"
 
 [node name="copy" type="Button" parent="CanvasLayer" unique_id=1915486705]
 offset_left = 218.0
-offset_top = 264.0
+offset_top = 376.0
 offset_right = 378.0
-offset_bottom = 314.0
+offset_bottom = 426.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
@@ -108,18 +180,77 @@ text = "Copy"
 [node name="him" type="LineEdit" parent="CanvasLayer" unique_id=2071365526]
 offset_left = 43.0
 offset_top = 136.0
-offset_right = 289.0
-offset_bottom = 177.0
+offset_right = 388.0
+offset_bottom = 188.0
 theme_override_colors/font_color = Color(0, 0, 0, 0)
 theme_override_colors/font_uneditable_color = Color(0, 0, 0, 0)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
 theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 placeholder_text = "Ammar?"
 expand_to_text_length = true
+caret_blink = true
+
+[node name="him2" type="LineEdit" parent="CanvasLayer" unique_id=732059419]
+offset_left = 43.0
+offset_top = 203.0
+offset_right = 131.0
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_constants/minimum_character_width = 2
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_iotk1")
+placeholder_text = "31"
+max_length = 2
+expand_to_text_length = true
+virtual_keyboard_type = 2
+caret_blink = true
+
+[node name="him3" type="LineEdit" parent="CanvasLayer" unique_id=2023686215]
+offset_left = 137.0
+offset_top = 203.0
+offset_right = 225.0
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_constants/minimum_character_width = 2
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_iotk1")
+placeholder_text = "12"
+max_length = 2
+expand_to_text_length = true
+virtual_keyboard_type = 2
+caret_blink = true
+
+[node name="him4" type="LineEdit" parent="CanvasLayer" unique_id=1749745756]
+offset_left = 232.0
+offset_top = 203.0
+offset_right = 388.0
+offset_bottom = 255.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_uneditable_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_constants/minimum_character_width = 4
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_w44g7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cm266")
+placeholder_text = "2008"
+max_length = 2
+expand_to_text_length = true
+virtual_keyboard_type = 2
 caret_blink = true
 
 [node name="him_label" type="Label" parent="CanvasLayer" unique_id=226214374]
@@ -134,9 +265,9 @@ autowrap_trim_flags = 64
 
 [node name="code" type="Label" parent="CanvasLayer" unique_id=572222448]
 offset_left = 47.0
-offset_top = 209.0
+offset_top = 323.0
 offset_right = 363.0
-offset_bottom = 247.0
+offset_bottom = 361.0
 text = "The code appears here."
 label_settings = ExtResource("3_jix8l")
 
@@ -158,6 +289,31 @@ text = "Horror Birthday"
 label_settings = SubResource("LabelSettings_vlew8")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="MenuBar" type="MenuBar" parent="CanvasLayer" unique_id=1117585683]
+offset_left = -111.0
+offset_top = 180.0
+offset_right = -71.0
+offset_bottom = 220.0
+
+[node name="daysxa" type="OptionButton" parent="CanvasLayer" unique_id=115245423]
+visible = false
+offset_left = 48.0
+offset_top = 202.0
+offset_right = 105.0
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qe12f")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_dy7ct")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8qtwp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_0o4t1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0k4wn")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_j5v2v")
+fit_to_longest_item = false
 
 [connection signal="pressed" from="CanvasLayer/generate" to="." method="_on_generate_pressed"]
 [connection signal="pressed" from="CanvasLayer/copy" to="." method="_on_copy_pressed"]
