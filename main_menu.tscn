@@ -1,5 +1,45 @@
 [gd_scene format=3 uid="uid://d1e0hab3v3y45"]
 
+[ext_resource type="Script" uid="uid://ndtnpr1scnsd" path="res://main_menu.gd" id="1_06t4h"]
+
 [node name="main_menu" type="Node2D" unique_id=616896952]
+script = ExtResource("1_06t4h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=657929481]
+
+[node name="generate" type="Button" parent="CanvasLayer" unique_id=1827534104]
+offset_left = 517.0
+offset_top = 318.0
+offset_right = 595.0
+offset_bottom = 349.0
+text = "generate"
+
+[node name="him" type="LineEdit" parent="CanvasLayer" unique_id=2071365526]
+offset_left = 521.0
+offset_top = 270.0
+offset_right = 589.5
+offset_bottom = 301.0
+
+[node name="code" type="Label" parent="CanvasLayer" unique_id=572222448]
+offset_left = 535.0
+offset_top = 414.0
+offset_right = 575.0
+offset_bottom = 437.0
+text = "here"
+
+[node name="og" type="Label" parent="CanvasLayer" unique_id=1205075721]
+offset_left = 536.0
+offset_top = 444.0
+offset_right = 576.0
+offset_bottom = 467.0
+text = "here"
+
+[node name="copy" type="Button" parent="CanvasLayer" unique_id=2075759857]
+offset_left = 652.0
+offset_top = 426.0
+offset_right = 697.0
+offset_bottom = 457.0
+text = "copy"
+
+[connection signal="pressed" from="CanvasLayer/generate" to="." method="_on_generate_pressed"]
+[connection signal="pressed" from="CanvasLayer/copy" to="." method="_on_copy_pressed"]
