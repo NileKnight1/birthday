@@ -50,12 +50,12 @@ func _on_generate_pressed() -> void:
 	for i in day:
 		code += (char(i.unicode_at(0)+30))
 	code += (char(50))
-	for i in day:
+	for i in month:
 		code += (char(i.unicode_at(0)+40))
-	code += (char(50))
+	code += (char(54))
 	for i in year:
 		code += (char(i.unicode_at(0)+50))
-	code += (char(50))
+	code += (char(48))
 	
 	
 	
